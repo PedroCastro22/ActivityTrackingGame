@@ -14,3 +14,5 @@
 (23-10-2020) [5 hours] Created my own GUI for connecting and hosting a server
 (25-10-2020) [4 hours] Created GUI for logging in and registering and set up a firebase and connected it to my project
 (26-10-2020) [6 hours] Trying to troubleshoot a problem where logging in and registering doesn't work on my device (no success)
+(28-10-2020) [2 hours] Research and thinking of new game idea
+(29-10-2020) [2 hours] Research and thinking of new game idea
