@@ -598,13 +598,14 @@
     <Compile Include="Assets\MapboxSDK\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARUserAnchor.cs" />
     <Compile Include="Assets\MapboxSDK\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
     <Compile Include="Assets\MapboxSDK\UnityARKitPlugin\UnityARKitPluginSettings.cs" />
-    <Compile Include="Assets\Models\Monsters\Monster.cs" />
+    <Compile Include="Assets\Prefabs\Monster.cs" />
     <Compile Include="Assets\Scenes\MainMenu\Connect.cs" />
     <Compile Include="Assets\Scenes\MainMenu\Database.cs" />
     <Compile Include="Assets\Scenes\MainMenu\DontDestroy.cs" />
     <Compile Include="Assets\Scenes\World\PlayerController.cs" />
     <Compile Include="Assets\Scenes\World\UIManager.cs" />
     <Compile Include="Assets\Utilities\MonsterSpawner.cs" />
+    <Compile Include="Assets\Utilities\NetworkManagerGame.cs" />
     <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
     <None Include="Assets\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative.txt" />

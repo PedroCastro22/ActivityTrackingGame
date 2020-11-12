@@ -15,12 +15,12 @@ public class MonsterSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < initialMonsters; i++)
-        {
-            SpawnMonster();
-        }
+        //for(int i = 0; i < initialMonsters; i++)
+        //{
+        //    SpawnMonster();
+        //}
 
-        StartCoroutine(Spawner());
+        //StartCoroutine(Spawner());
     }
 
     private IEnumerator Spawner()

@@ -1418,7 +1418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &471282113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2533,7 +2533,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5390514423811190578}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1269328939}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c1e947e972e7894b88edd611a83e5da, type: 3}
@@ -2664,6 +2664,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257577282}
   m_CullTransparentMesh: 0
+--- !u!1 &1269328939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5390514422595017684, guid: 3f6bace2ca8903744ac650544087429d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5390514423811190578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1269328940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5390514422595017690, guid: 3f6bace2ca8903744ac650544087429d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5390514423811190578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269328939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7424c1070fad4ba2a7a96b02fbeb4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1269328941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269328939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d83be5dfbb6ffe4d8d5eeb6904997f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 1
+  runInBackground: 1
+  autoStartServerBuild: 1
+  showDebugMessages: 0
+  serverTickRate: 30
+  offlineScene: Assets/Scenes/MainMenu/MainMenu.unity
+  onlineScene: Assets/Scenes/World/Main.unity
+  transport: {fileID: 1269328940}
+  networkAddress: 192.168.0.10
+  maxConnections: 4
+  disconnectInactiveConnections: 0
+  disconnectInactiveTimeout: 60
+  authenticator: {fileID: 0}
+  playerPrefab: {fileID: 4341155561772557587, guid: 4a10781f09f7b3d40a11c03cae5df37f,
+    type: 3}
+  autoCreatePlayer: 1
+  playerSpawnMethod: 0
+  spawnPrefabs:
+  - {fileID: 3584619256590056360, guid: 4450b75e1471b2747909c804d58a3ecc, type: 3}
 --- !u!1 &1321794391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,7 +3333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1602487060
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4574,5 +4623,6 @@ PrefabInstance:
       propertyPath: networkAddress
       value: 192.168.0.10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5390514422595017691, guid: 3f6bace2ca8903744ac650544087429d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f6bace2ca8903744ac650544087429d, type: 3}

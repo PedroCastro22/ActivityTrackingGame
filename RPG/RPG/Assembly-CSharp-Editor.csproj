@@ -95,7 +95,6 @@
     <Compile Include="Assets\MapboxSDK\Mapbox\Core\probe-extractor-cs\Tests\Editor\MapboxUnitTests_ProbeExtractorCs.cs" />
     <Compile Include="Assets\MapboxSDK\Mapbox\Unity\Editor\AddMonoBehavioursModifierDrawer.cs" />
     <Compile Include="Assets\MapboxSDK\Mapbox\Unity\Editor\AtlasTemplateGenerator.cs" />
-    <Compile Include="Assets\MapboxSDK\Mapbox\Unity\Editor\Build\Mapbox_iOS_build.cs" />
     <Compile Include="Assets\MapboxSDK\Mapbox\Unity\Editor\ClearFileCache.cs" />
     <Compile Include="Assets\MapboxSDK\Mapbox\Unity\Editor\EditorHelper.cs" />
     <Compile Include="Assets\MapboxSDK\Mapbox\Unity\Editor\FactoryEditor.cs" />
