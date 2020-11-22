@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Mirror
 {
-    public class Connect : MonoBehaviour
+    public class Connect : NetworkBehaviour
     {
         [SerializeField] private Text IPaddress;
         [SerializeField] private GameObject IPaddressLabel;
@@ -59,7 +59,7 @@ namespace Mirror
             {
                 manager.StopClient();
             }
-            else if(NetworkServer.active)
+            else if (NetworkServer.active)
             {
                 manager.StopServer();
             }

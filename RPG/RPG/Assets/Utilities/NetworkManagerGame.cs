@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class NetworkManagerGame : NetworkManager
 {
+    private float spawnInterval = 30f;
 
     GameObject monster;
 
@@ -13,6 +14,18 @@ public class NetworkManagerGame : NetworkManager
         base.OnServerAddPlayer(conn);
 
         SpawnMonster(5);
+
+        StartCoroutine(Spawner());
+    
+    }
+
+    private IEnumerator Spawner()
+    {
+        while (true)
+        {
+            SpawnMonster(1);
+            yield return new WaitForSeconds(spawnInterval);
+        }
     }
 
     public void SpawnMonster(int initialNumber)
@@ -27,8 +40,6 @@ public class NetworkManagerGame : NetworkManager
         {
             monster = Instantiate(spawnPrefabs.Find(prefab => prefab.name == "Monster"), new Vector3(x, y, z), Quaternion.identity);
             NetworkServer.Spawn(monster);
-
-            print(monster.transform.position);
 
             x = player.transform.position.x + RandomizeSpawn();
             y = player.transform.position.y + 5;
