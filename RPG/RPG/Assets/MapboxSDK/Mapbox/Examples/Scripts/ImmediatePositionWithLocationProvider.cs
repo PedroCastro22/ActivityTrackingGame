@@ -5,7 +5,7 @@
     using Mirror;
     using UnityEngine;
 
-	public class ImmediatePositionWithLocationProvider : NetworkBehaviour
+	public class ImmediatePositionWithLocationProvider : MonoBehaviour
 	{
 
 		bool _isInitialized;
@@ -33,13 +33,10 @@
 
 		void LateUpdate()
 		{
-            if (this.isLocalPlayer)
-            {
-				if (_isInitialized)
-				{
-					var map = LocationProviderFactory.Instance.mapManager;
-					transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
-				}
+			if (_isInitialized)
+			{
+				var map = LocationProviderFactory.Instance.mapManager;
+				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
 			}
 		}
 	}

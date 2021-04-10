@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.SceneManagement;
@@ -27,6 +29,7 @@ namespace Mirror
                 if (Application.platform != RuntimePlatform.WebGLPlayer)
                 {
                     discButton.GetComponentInChildren<Text>().text = "Stop Host";
+                    GetLocalIPv4();
                     manager.StartHost();
                     Connected();
                     Status();
@@ -63,6 +66,18 @@ namespace Mirror
             {
                 manager.StopServer();
             }
+        }
+
+        public string GetLocalIPv4()
+        {
+            print(Dns.GetHostEntry(Dns.GetHostName())
+                .AddressList.First(
+                    f => f.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                .ToString());
+            return Dns.GetHostEntry(Dns.GetHostName())
+                .AddressList.First(
+                    f => f.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                .ToString();
         }
 
         public void Status()

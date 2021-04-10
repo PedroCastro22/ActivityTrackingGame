@@ -598,13 +598,25 @@
     <Compile Include="Assets\MapboxSDK\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARUserAnchor.cs" />
     <Compile Include="Assets\MapboxSDK\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
     <Compile Include="Assets\MapboxSDK\UnityARKitPlugin\UnityARKitPluginSettings.cs" />
-    <Compile Include="Assets\Prefabs\Monster.cs" />
     <Compile Include="Assets\Scenes\MainMenu\Connect.cs" />
     <Compile Include="Assets\Scenes\MainMenu\Database.cs" />
     <Compile Include="Assets\Scenes\MainMenu\DontDestroy.cs" />
-    <Compile Include="Assets\Scenes\World\PlayerController.cs" />
     <Compile Include="Assets\Scenes\World\UIManager.cs" />
-    <Compile Include="Assets\Utilities\MonsterSpawner.cs" />
+    <Compile Include="Assets\Scripts\EndSceneManager.cs" />
+    <Compile Include="Assets\Scripts\GameNetworkManager.cs" />
+    <Compile Include="Assets\Scripts\JoinLobbyMenu.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MonsterController.cs" />
+    <Compile Include="Assets\Scripts\MonsterSpawnerSystem.cs" />
+    <Compile Include="Assets\Scripts\NetworkGamePlayer.cs" />
+    <Compile Include="Assets\Scripts\NetworkRoomPlayer.cs" />
+    <Compile Include="Assets\Scripts\PlayerCameraController.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerNameInput.cs" />
+    <Compile Include="Assets\Scripts\PlayerPosition.cs" />
+    <Compile Include="Assets\Scripts\PlayerRotation.cs" />
+    <Compile Include="Assets\Scripts\PlayerSpawnSystem.cs" />
+    <Compile Include="Assets\Scripts\ScoreSystem.cs" />
     <Compile Include="Assets\Utilities\NetworkManagerGame.cs" />
     <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
     <None Include="Assets\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
@@ -612,6 +624,8 @@
     <None Include="Assets\MapboxSDK\UnityARInterface\Examples\Common\Shaders\MobileOcclusion.shader" />
     <None Include="Assets\Mirror\Readme.txt" />
     <None Include="Assets\MapboxSDK\UnityARInterface\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Unity\Location\ExampleGpsTraces\Helsinki.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Building\CharacterBuildingShader.shader" />
     <None Include="Assets\MapboxSDK\GoogleARCore\SDK\Materials\ARBackground.shader" />
@@ -622,31 +636,50 @@
     <None Include="Assets\MapboxSDK\MapboxAR\Examples\ARTabletop\Shaders\ClipBox\Clip_Box.shader" />
     <None Include="Assets\MapboxSDK\Mapbox\README.txt" />
     <None Include="Assets\MapboxSDK\Resources\Mapbox\MapboxConfiguration.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Mirror\version.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\MapboxSDK\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Core\Plugins\Android\UniAndroidPermission\AndroidManifest-uniRP.xml" />
     <None Include="Assets\MapboxSDK\MapboxAR\Examples\ARTabletop\Shaders\ClipBox\LICENSE.txt" />
     <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Shaders\MapboxStyles.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\MapboxSDK\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
     <None Include="Assets\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
     <None Include="Assets\ScriptTemplates\53-Mirror__Network Observer-NewNetworkObserver.cs.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderUnity.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative-2.txt" />
     <None Include="Assets\MapboxSDK\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShaderLinear.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\ScriptTemplates\52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt" />
     <None Include="Assets\MapboxSDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\ProjectorLight.shader" />
     <None Include="Assets\MapboxSDK\GoogleARCore\Examples\ComputerVision\Materials\AREdgeDetectionBackground.shader" />
     <None Include="Assets\MapboxSDK\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\MapboxSDK\MapboxAR\Examples\ARTabletop\Shaders\Clip_MapboxStyles.shader" />
     <None Include="Assets\MapboxSDK\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\MapboxSDK\MapboxAR\Examples\ARTabletop\Shaders\Clip_MapBoxStylesPerRenderer.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
     <None Include="Assets\MapboxSDK\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\MapboxSDK\UnityARInterface\Examples\Common\Shaders\MobileARShadow.shader" />
     <None Include="Assets\MapboxSDK\Mapbox\link.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\MapboxSDK\Mapbox\Core\Plugins\link.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Reference Include="Cinemachine">
+      <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -655,6 +688,9 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -916,6 +952,9 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/PackageCache/com.unity.cinemachine@2.7.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.28f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

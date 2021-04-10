@@ -388,6 +388,9 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/PackageCache/com.unity.cinemachine@2.7.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/ActivityTrackingGame/RPG/RPG/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
