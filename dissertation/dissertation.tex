@@ -66,7 +66,7 @@ the implementation process, how the project was evaluated and lastly, the conclu
 Physical activity should be present in every capable person's lifestyle. Many studies have been conducted that show 
 that physical activity can play an important role in the management of mild-to-moderate mental health illness, such as 
 depression and anxiety, for example, aerobic exercises such as jogging, cycling, spinning, etc, can reduce depressive 
-symptons as well as anxiety and panic ones \citep{Paluska12}. In addition to this, even the most basic of physical exercises, 
+symptoms as well as anxiety and panic ones \citep{Paluska12}. In addition to this, even the most basic of physical exercises, 
 such as walking, have significant positive impacts on physical health as well. These go from simply reducing body fat and 
 increasing muscle strength to reducing the risk of heart diseases and stroke. The most interesting part of all of this is 
 that it doesn't need to be a long or demanding exercise, simply walking 30 minutes can already bring many mental and 
@@ -257,8 +257,8 @@ way it works is each requirement will have two labels, the first one is part of 
 \item \textbf{M - Y}: The user must be able to host or connect to a game lobby within a protected network. This constitutes the multiplayer feature.
 \item \textbf{M - Y}: The application must be able to retrieve real time movement from the device. This is necessary in every LBG.
 \item \textbf{M - Y}: Users must be able to see each other's movement in real time. This is what will differentiate this game from the likes of Pokemon GO, it will hopefully make the 
-game more entertaining and improve replayability.
-\item \textbf{M - Y}: The application must be at least minimaly enjoyable. This wouldn't be important if this was a simple application, but since it is a game playability is considered a must.
+game more entertaining and improve re-playability.
+\item \textbf{M - Y}: The application must be at least minimally enjoyable. This wouldn't be important if this was a simple application, but since it is a game playability is considered a must.
 \item \textbf{M - Y}: Users must be able to play by themselves if they wish to. This feature was particularly relevant during lockdown when the government banned people from doing 
 physical exercises together.
 \item \textbf{S - Y}: Retrieve the host's IPv4. Important feature that allows the host to share their IP with the other players so that they can join the lobby.
@@ -267,7 +267,7 @@ physical exercises together.
 \item \textbf{S - N}: Users should be able to connect to a lobby from a public network such as 4G data.
 \item \textbf{S - Y}: The game should have textures and sprites for the game objects such as the players and enemies. Art style is very important in games to attract new players \citep{Solarski13}.
 \item \textbf{C - Y}: Difficulty System. Allow the host to change between levels of difficulty that would equate to walking, jogging and running.
-\item \textbf{C - N}: High Score System. Save the players high score in their device to create a competitive feel and add replayability to the game.
+\item \textbf{C - N}: High Score System. Save the players high score in their device to create a competitive feel and add re-playability to the game.
 \item \textbf{C - N}: Soundtrack and/or environment sounds. This would be nice to have in case the players are using headphones. In the other hand users are not encouraged to play 
 with headphones on so they will aware of their surroundings.
 \item \textbf{C - N}: Different Characters Selection. Merely an aesthetic feature that could be useful when it comes to player distinction, especially when players happen to be very close together.
@@ -320,11 +320,11 @@ The architecture for the game system is quite simple in nature and similar to ma
 
 When users (players) launch the app they can choose between hosting (being a server and client at the same time) or joining an existing lobby, both options connect them to a location based server which will start keeping track of their device's real time position. When in the server, the player has different choices depending if they are a Lobby Host or a Lobby Client. If they are a host they are able to choose the difficulty of the game and also start the game, whereas if they are a client they can simply ready up and wait for the host to notify them of when the game is starting. Once all players are readied up and the host has chosen a difficulty, the game launches on all clients (this includes the host) and people are ready to start playing.
 
-This approach was molded towards meeting certain "must have" requirements, specifically the functional requirements numbered \textbf{1, 2 and 5}.
+This approach was moulded towards meeting certain "must have" requirements, specifically the functional requirements numbered \textbf{1, 2 and 5}.
 
 \subsection{User Interface Prototypes}
 
-The user interface was created with the requirements in mind. Although there aren't any "must have" requirements reagarding the user interface, functional requirement (FR) \textbf{7} shows that having an easy to navigate UI is something the application should have. In addition to this, FR \textbf{15} is also a nice feature that would improve the quality of the game.
+The user interface was created with the requirements in mind. Although there aren't any "must have" requirements regarding the user interface, functional requirement (FR) \textbf{7} shows that having an easy to navigate UI is something the application should have. In addition to this, FR \textbf{15} is also a nice feature that would improve the quality of the game.
 
 The conception for the user interface began very early in development in the form of paper sketches, shown in the figures \textbf{\ref{fig:start-menu} and \ref{fig:lobby-menu}}.
 
@@ -364,11 +364,11 @@ The conception for the user interface began very early in development in the for
 
 In these figures we can see how the system architecture translates to a user interface. As soon as the user launches the app, they're prompted with a window that asks them to choose the name for their in-game character by using a input field combined with a confirm button, and ideally the software would filter out inappropriate names internally. Once they have entered their name, the user can then choose if they either want to host a lobby in their network or join an existing one.
 
-Moving on to the lobby, the screen should look different depending if the player is a client or a host, as specified in the system architecture. Although both screens should be able to see the player's names as basic text fields and if they are ready or not, the host screen comes with a "select difficulty" and "start game" button whereas the client screen can only ready up.
+Moving on to the lobby, the screen should look different depending on if the player is a client or a host, as specified in the system architecture. Although both screens should be able to see the player's names as basic text fields and if they are ready or not, the host screen comes with a "select difficulty" and "start game" button whereas the client screen can only ready up.
 
 \subsection{Initial User Interface}
 
-After the paper prototypes, the next step was to create some more robust and functional wireframes. The wireframes shown in Figure \textbf{\ref{fig:wireframe}} were created using the "Unity" software (also where the whole game was created) and aimed to fulfill virtually every function present in the paper prototypes. 
+After the paper prototypes, the next step was to create some more robust and functional wireframes. The wireframes shown in Figure \textbf{\ref{fig:wireframe}} were created using the "Unity" software (also where the whole game was created) and aimed to fulfil virtually every function present in the paper prototypes. 
 
 \begin{figure}[H]
 \begin{subfigure}[h]{.5\textwidth}
@@ -393,7 +393,7 @@ After the paper prototypes, the next step was to create some more robust and fun
 \label{fig:wireframe}
 \end{figure}
 
-These wireframes give a better idea of how the start menu and lobby will look like in-game. Some changes have been made from the previous prototypes, for instance, a "IP address" feature was added which allows players in a lobby to see what IP address that lobby is being hosted on so they share it with other players. Furthermore, the wireframes didn't include any "Go back/Quit" button which hinders UI navigation, the reason for this is that this testing phase focused more on forward navigation, which is when the user goes downward in the app hierarchy, accessing deeper content \citep{mat21}.
+These wireframes give a better idea of how the start menu and lobby will look like in-game. Some changes have been made from the previous prototypes, for instance, a "IP address" feature was added which allows players in a lobby to see what IP address that lobby is being hosted on, so they share it with other players. Furthermore, the wireframes didn't include any "Go back/Quit" button which hinders UI navigation, the reason for this is that this testing phase focused more on forward navigation, which is when the user goes downward in the app hierarchy, accessing deeper content \citep{mat21}.
 
 \section{Game Interface}
 
@@ -411,13 +411,13 @@ The paper prototype had 2 buttons, one for settings and one for leaving the game
 \begin{figure}[H]
 \centering
 \includegraphics[width = .6\linewidth]{images/game-ui2.png}
-\caption{This figure shows how the second interation of the game UI, with a single "Settings" button that once clicked enables others buttons}
+\caption{This figure shows how the second iteration of the game UI, with a single "Settings" button that once clicked enables others buttons}
 \label{fig:game-ui2}
 \end{figure}
 
 \section{Server} 
 
-In early stages we had two options of server architecture to go for. The first one was the well known "dedicated server" concept, in which the server is hosted in a separate machine or cloud service (AWS, Microsofot Azure) and serves only as a connection and communication point, not operating as a client. The other option, which is the one that end up being used in the project, is the Host architecture, in which a user can choose to host a lobby and operate as both server and client; in this architecture the server is hosted in that user's device and clients connect to that device's IP address as can be seen in the Figure \textbf{\ref{fig:server-arch}}.
+In early stages we had two options of server architecture to go for. The first one was the well-known "dedicated server" concept, in which the server is hosted in a separate machine or cloud service (AWS, Microsoft Azure) and serves only as a connection and communication point, not operating as a client. The other option, which is the one that end up being used in the project, is the Host architecture, in which a user can choose to host a lobby and operate as both server and client; in this architecture the server is hosted in that user's device and clients connect to that device's IP address as can be seen in the Figure \textbf{\ref{fig:server-arch}}.
 
 \begin{figure}[H]
 \centering
@@ -443,10 +443,10 @@ In this section we will explore the tools and scripts that were used to help wit
 \subsection{Version Control}
 It was paramount that this project had Version Control. In the first meeting with the supervisor, it was decided that GitHub was going to be tool used for both version control and issue tracking due to its easy-to-use and convenient nature. In addition to this, Git was the version control "language" that I had the most experience with, having work with both GitLab and GitHub in previous projects. 
 
-In the early implementation stages, there were daily commits to the app's GitHub project with the progress done on that day in addition to a progress report. This practice continued for the first 3 months of development but as soon as coding slowed in pace, these commits were done weekly since not a lot (if any) progress was being aciheved. The frequent use of Git was proven to be extremely useful for development after a glitch in a software caused the files to be deleted on the PC's hard drive, these files were easily recovered using Git's "pull" feature.
+In the early implementation stages, there were daily commits to the app's GitHub project with the progress done on that day in addition to a progress report. This practice continued for the first 3 months of development but as soon as coding slowed in pace, these commits were done weekly since not a lot (if any) progress was being achieved. The frequent use of Git was proven to be extremely useful for development after a glitch in a software caused the files to be deleted on the PC's hard drive, these files were easily recovered using Git's "pull" feature.
 
 \subsection{Progress Logging}
-It was on the guidelines for the project that progress should be logged in a file called "timelog.md" that should be constantly updated, daily if possible; a snippet of how the file looks is shown in Figure \textbf{\ref{fig:timelog-md}}. For more convenience, instead of updating this file manually everyday, a python script that could be excuted from command line was created. The python script takes 2 arguments, the amount of hours worked on that particular day and what has been done, the script also retrieves the current date by using the "datetime.today()" function.
+It was on the guidelines for the project that progress should be logged in a file called "timelog.md" that should be constantly updated, daily if possible; a snippet of how the file looks is shown in Figure \textbf{\ref{fig:timelog-md}}. For more convenience, instead of updating this file manually everyday, a python script that could be executed from command line was created. The python script takes 2 arguments, the amount of hours worked on that particular day and what has been done, the script also retrieves the current date by using the "datetime.today()" function.
 
 \begin{figure}[H]
 \centering
@@ -476,7 +476,7 @@ The specific Android version that this application was built on is "Android Oreo
 \subsection{Game Engine}
 The game engine of choice for this application was "Unity" \footnote{Getting started with Android development in Unity: \url{https://docs.unity3d.com/560/Documentation/Manual/android-GettingStarted.html}}. We considered a variety of other engines, mainly Android Studio and Xamarin, but Unity ended up trumping other softwares for a variety of reasons. The first and main one, is that we already had previous experience on game developing in Unity (albeit PC games). Secondly, Unity has great cross platform tools, that would enable for the game to be released for both Android and iOS devices with very little alterations \citep{Sinicki20}. Unity also has a large variety of libraries (packages) that would be extremely useful for the development of this project, including many multiplayer support packages and a few location service packages. 
 
-The engine is well known for it's "visual scripting" that allows for complex operations to take place without the need to code much, but this project focused completely on the use of actual scripting written in the C\# language.
+The engine is well-known for it's "visual scripting" that allows for complex operations to take place without the need to code much, but this project focused completely on the use of actual scripting written in the C\# language.
 
 \subsection{Location Service Package}
 As mentioned before, Unity has many choices of packages for a lot of different functionalities. Unfortunately location based functionality is not one of those and LBG packages are still somewhat scarce in the platform. Having said that, after some brief research, we found the open-source "Mapbox SDK"\footnote{Mapbox SDK for Unity: \url{https://docs.mapbox.com/unity/maps/guides/}} package which would fit perfectly in this project since it was created with location based games in mind. 
@@ -552,10 +552,10 @@ This chapter will evaluate the implementation methods and discuss what could hav
 This section will discuss which implementation methods would have been more efficient than the current ones, and which methods can't be considerably improved.
 
 \subsection{Location Services Implementation}
-The implementation of this service followed the best guidelines and the service works almost flawlessly when used in singleplayer, with major issues only appearing when paired with the multiplayer functionality. In addition, the Mapbox SDK is the most widely used and most recommended Location Service for Unity. Thus, there are no obvious improvements to the implementation of this service seing that most issues are related with the SDK itself and not with how it was implemented, such as the character rotation.
+The implementation of this service followed the best guidelines and the service works almost flawlessly when used in single player, with major issues only appearing when paired with the multiplayer functionality. In addition, the Mapbox SDK is the most widely used and most recommended Location Service for Unity. Thus, there are no obvious improvements to the implementation of this service seeing that most issues are related with the SDK itself and not with how it was implemented, such as the character rotation.
 
-\subsection{Multilplayer Service Implementation}
-On the contraire, the multiplayer service has issues that were caused by how it was implemented. Many of the game glitches that are present in the current build could have been avoided if games were hosted on a dedicated server as opposed to being hosted in a user's device, an attempt to fix this was made in the last iteration but needed more time to be completed. Figure \textbf{\ref{fig:server-lobby}} shows how a lobby hosted on a dedicated server would look like, with a match ID being necessary to join a lobby instead of the IP address.
+\subsection{Multiplayer Service Implementation}
+On the contrairy, the multiplayer service has issues that were caused by how it was implemented. Many of the game glitches that are present in the current build could have been avoided if games were hosted on a dedicated server as opposed to being hosted in a user's device, an attempt to fix this was made in the last iteration but needed more time to be completed. Figure \textbf{\ref{fig:server-lobby}} shows how a lobby hosted on a dedicated server would look like, with a match ID being necessary to join a lobby instead of the IP address.
 
 \begin{figure}[H]
 \centering
@@ -584,7 +584,7 @@ The second experiment is similar to the first one, but instead of testing just t
 \subsection{Pilot Study}
 Before conducting the said user evaluation, a pilot study where one chosen participant tested both the user interface and the game has been carried out. The goal of the pilot study was to have a user that is not the developer give a detailed feedback from a user's view and also help identify any underlying bugs before the application was handed out for the main user evaluation. Furthermore, it also helped construct the form with relevant questions that came up during the pilot study.
 
-This study identified a few bugs that were fixed before the main evaluation, for instance, there wasn't a button to leave the credits or instructions screen so the user was stuck there and had to restart the app, these buttons were then added. In addition to this the participant also noted that the game was extremely easy even on the hardest difficulty, thus some variables were changed to make enemies enemies a bit faster and also spawn more often.
+This study identified a few bugs that were fixed before the main evaluation, for instance, there wasn't a button to leave the credits or instructions screen so the user was stuck there and had to restart the app, these buttons were then added. In addition to this the participant also noted that the game was extremely easy even on the hardest difficulty, thus some variables were changed to make enemies a bit faster and also spawn more often.
 
 \subsection{Results}
 \textbf{Experiment 1}
@@ -631,7 +631,7 @@ The general response for questions \textbf{1, 2 and 4} were mostly positive with
 
 \textbf{Experiment 2}
 
-The game mechanics evaluation was conducted by 10 participants that were also sent a .APK file with the whole product that they in turn uploaded to their devices. Unlike Experiment 1 which focused mainly on the aesthetic side, this evaluation's goal was to receive feedback on how the application runs on different systems and how players would view the application. The evaluation form (\textbf{Figure \ref{fig:gf1} and \ref{fig:gf2}}) asked the user for information about their device (what brand, what android version, etc..) in addition to questions about the game itself (is it motivating, is it enjoyable, etc...). The results have been plotted in various charts created using Python's matplotlib \footnote{Matplotlib library: \url{https://matplotlib.org/}}library for easier visualisation. 
+The game mechanics evaluation was conducted by 10 participants that were also sent a .APK file with the whole product that they in turn uploaded to their devices. Unlike Experiment 1 which focused mainly on the aesthetic side, this evaluation's goal was to receive feedback on how the application runs on different systems and how players would view the application. The evaluation form (\textbf{Figure \ref{fig:gf1} and \ref{fig:gf2}}) asked the user for information about their device (what brand, what android version, etc..) in addition to questions about the game itself (is it motivating, is it enjoyable, etc...). The results have been plotted in various charts created using Python's matplotlib \footnote{Matplotlib library: \url{https://matplotlib.org/}}library for easier visualization. 
 
 On \textbf{Figure \ref{fig:android-version-chart}} we can see that the great majority of participants have an android version of 10 or greater, although 10\% were using an android version 8, thus although the target version of the app is 10.0, it was decided to maintain support of earlier versions.
 
@@ -654,15 +654,15 @@ Regarding the game mechanics evaluations, the form offered very valuable feedbac
 Furthermore, it became evident from the responses that the game wasn't enjoyable or motivating enough to be considered a success. Only one participant rated "Is the game "Stay Away!" a good exercise motivator?" with a 5, and half of participants said the game wasn't enjoyable nor boring; most of the suggestions given by participants were about making the game harder and with faster enemies. With this in mind, some variables were tweaked to make enemies faster and spawning more often, in addition to this, the distance necessary between the player and enemies for the player to take damage was increased.
 
 \section{Summary}
-This chapter evaluated the imlpementation methodologies that were adopted and how they could be improved in a future work. Additionally, the chapter also went through the evaluation methodologies for the application, and how the feedback gathered from these evaluations was used to improve the overall quality of the game.
+This chapter evaluated the implementation methodologies that were adopted and how they could be improved in a future work. Additionally, the chapter also went through the evaluation methodologies for the application, and how the feedback gathered from these evaluations was used to improve the overall quality of the game.
 
 \chapter{Conclusion}
 
-This paper talked over what the goals and motivations were for this project. The aim was to investigate how location based games work and how making them multiplayer could motivate players to exercise and play together. Requirements set at the beggining of the project were listed to provide an outline, and later in the paper we discussed how they were met and how the application was designed around them. The implementation for various parts of the application was explained in detail followed by an evaluation on how effective these implementation methods were. Additionally, the paper also discussed how the application itself was evaluated and this feedback helped improve the quality. Finally, this chapter will summarise the project and talk about what can be improved or removed in the future works. Lastly, a personal reflection on the subject will be provided.
+This paper talked over what the goals and motivations were for this project. The aim was to investigate how location based games work and how making them multiplayer could motivate players to exercise and play together. Requirements set at the beginning of the project were listed to provide an outline, and later in the paper we discussed how they were met and how the application was designed around them. The implementation for various parts of the application was explained in detail followed by an evaluation on how effective these implementation methods were. Additionally, the paper also discussed how the application itself was evaluated and this feedback helped improve the quality. Finally, this chapter will summarize the project and talk about what can be improved or removed in the future works. Lastly, a personal reflection on the subject will be provided.
 
 \section{Summary}
 
-In summary, Stay Away! is a multiplayer Location Based Game that was designed to provide an entertaining experience while also encouraging physical activity. The system uses a host/client network architecture in which a user hosts a temporary server in their devices, and other users connect to that server through that device's IPv4 address. What differentiates this game from other games in the genre (Pokemon GO) is that players are able to see each other's characters in real time, which in turn improves playabiliy. The application's appearance and mechanics have been evaluated by real life pariticipants that later gave feedback by completing a form, this feedback was then used to improve how the game looks and feels, but it's still not a complete project.
+In summary, Stay Away! is a multiplayer Location Based Game that was designed to provide an entertaining experience while also encouraging physical activity. The system uses a host/client network architecture in which a user hosts a temporary server in their devices, and other users connect to that server through that device's IPv4 address. What differentiates this game from other games in the genre (Pokemon GO) is that players are able to see each other's characters in real time, which in turn improves playability. The application's appearance and mechanics have been evaluated by real life participants that later gave feedback by completing a form, this feedback was then used to improve how the game looks and feels, but it's still not a complete project.
 
 The system has proved to be enjoyable as a game but didn't motivate physical exercise in players enough, thus some future changes are planned for this project, which hopefully will bring it closer to envisioned final product.
 
@@ -670,13 +670,13 @@ The system has proved to be enjoyable as a game but didn't motivate physical exe
 
 The future work for "Stay Away!" is mainly focused on adding features that would make it a better exercise motivator. Many features have been planned out that could do such a thing and in this section we will discuss each one of them. The first feature is a calories burned calculator, it has been shown that having user's being able to see how many calories they burned is a good motivator because it helps them determine whether they have met their goals for that session \citep{Sullivan16}. This feature combined with a distance walked counter would be very needed UI additions. Another feature that could improve the motivating factor is a "Goals" tab, in which the user could set out a goal in terms of calories burned and everytime they play the game, the calories burned on that session would be logged and count towards their goal. 
 
-In addition to exercise motivating features, the multiplayer logic can also be improved. The current plan is to change the current host/client logic to a dedicated server one, this would provide various possibilities that aren't possible with current structure, namely an account creation platform; being able to join a lobby from public networks, logging valuable data into a database. This feature has been experienced with as can be seen on \textbf{Figure \ref{fig:server-lobby}}, and AWS offers free space to host a server that can be easily connect to a DynamoDB database.
+In addition to exercise motivating features, the multiplayer logic can also be improved. The current plan is to change the current host/client logic to a dedicated server one, this would provide various opportunities that aren't possible with current structure, namely an account creation platform; being able to join a lobby from public networks; logging valuable data into a database. This feature has been experienced with as can be seen on \textbf{Figure \ref{fig:server-lobby}}, and AWS offers free space to host a server that can be easily connected to a DynamoDB database.
 
 \section{Personal Reflection}
 
 This project has been extremely helpful to me as it taught me how to manage my time when working with long pieces of work, and also how to properly divide the different workloads in different iterations for more efficiency. Since a lot of the issues faced didn't have a direct answer online, I had to read through large pieces of documentation to be able to fix them, this is a practice that I didn't have before as most of my questions had been asked online before.
 
-In addition to this, I learned a lot about network structures and how to sync data between two or more devices, this will undoubtely become useful as I plan to work on multiplayer games in the future.
+In addition to this, I learned a lot about network structures and how to sync data between two or more devices, this will undoubtedly become useful as I plan to work on multiplayer games in the future.
 
 Lastly, this project was the first time I worked with user evaluation even though it is such an important part of application development, and I'm sure I will use the experience I gained from this in future projects.
 
